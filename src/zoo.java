@@ -2,9 +2,9 @@ public class zoo {
 
     public static void main(String args[]){
         zoo z = new zoo();
-        z.sleep("Tigger");
-        z.eat("Tigger", "meat");
-        z.eat("Tigger", "bacon");
+        Tiger tigger = new Tiger("Tigger");
+        tigger.eat("meat");
+        tigger.eat("kibble");
     }
 
     String favoriteFood = "bacon";
@@ -21,3 +21,4 @@ public class zoo {
         }
     }
 }
+
