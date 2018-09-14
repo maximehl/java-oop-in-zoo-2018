@@ -15,6 +15,8 @@ public class zoo {
         Bee stinger = new Bee("Stinger");
         stinger.eat("ice cream");
         stinger.eat("pollen");
+        Zookeeper zoeBot = new Zookeeper("ZoeBot");
+        zoeBot.feedAnimals(new Animal[] {tigger, pooh, rarity, gemma, stinger}, "grilled vegetables");
     }
 
 }
