@@ -2,8 +2,10 @@ public class Animal{
 
     String name;
     String favoriteFood;
+    static int population = 0;
 
     public Animal(String name, String favoriteFood){
+        Animal.population++;
         this.name = name;
         this.favoriteFood = favoriteFood;
     }
