@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class zoo {
 
     public static void main(String args[]){
@@ -16,8 +18,16 @@ public class zoo {
         stinger.eat("ice cream");
         stinger.eat("pollen");
         Zookeeper zoeBot = new Zookeeper("ZoeBot");
-        zoeBot.feedAnimals(new Animal[] {tigger, pooh, rarity, gemma, stinger}, "grilled vegetables");
+        //zoeBot.feedAnimals(new Animal[] {tigger, pooh, rarity, gemma, stinger}, "grilled vegetables");
+
+        //this also works now... my project defaults were weird
+        ArrayList<Animal> animals = new ArrayList<Animal>();
+        animals.add(tigger);
+        animals.add(pooh);
+        animals.add(rarity);
+        animals.add(gemma);
+        animals.add(stinger);
+        zoeBot.feedAnimals(animals, "grilled vegetables");
     }
 
 }
-
